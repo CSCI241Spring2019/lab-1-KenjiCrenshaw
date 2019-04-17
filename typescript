@@ -1,0 +1,897 @@
+Script done, file is typescript
+crenshk@CF165-23:~$ cd CSCI241
+bash: cd: CSCI241: No such file or directory
+crenshk@CF165-23:~$ ls
+Desktop    Downloads	      #mredauto#1#  Pictures  Templates   Videos
+Documents  eclipse-workspace  Music	    Public    typescript
+crenshk@CF165-23:~$ cd Documents
+crenshk@CF165-23:~/Documents$ ls
+CSCI241  Custom Office Templates  Student Info Sheet - Kenji Crenshaw.doc
+CSCI247  desktop.ini
+CSCI301  $RECYCLE.BIN
+crenshk@CF165-23:~/Documents$ cd CSCI241
+crenshk@CF165-23:~/Documents/CSCI241$ git clone https://github.com/CSCI241Spring2019/lab-1-KenjiCrenshaw.git
+Cloning into 'lab-1-KenjiCrenshaw'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 8 (delta 0), reused 8 (delta 0), pack-reused 0
+Unpacking objects: 100% (8/8), done.
+Checking connectivity... done.
+crenshk@CF165-23:~/Documents/CSCI241$ git config --global user.name "Kenji Crenshaw"
+crenshk@CF165-23:~/Documents/CSCI241$ git config --global user.email crenshk@wwu.edu
+crenshk@CF165-23:~/Documents/CSCI241$ cd lab-1-KenjiCrenshaw
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ touch writeup.txt
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git add writeup.txt
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git commit -m "Added empty writeup"
+[master 8cbbce3] Added empty writeup
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 writeup.txt
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': KenjiCrenshaw
+Password for 'https://KenjiCrenshaw@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 319 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/CSCI241Spring2019/lab-1-KenjiCrenshaw.git
+   1523c09..8cbbce3  master -> master
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git add writeup.txt
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git commit -m "Added part 1 (names) to writeup"
+[master 308cffe] Added part 1 (names) to writeup
+ 1 file changed, 1 insertion(+)
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   writeup.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git add writeup.txt
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git commit -m "Added part 2 (hobby) to writeup"
+[master d00b87d] Added part 2 (hobby) to writeup
+ 1 file changed, 1 insertion(+)
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': KenjiCrenshaw
+Password for 'https://KenjiCrenshaw@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/CSCI241Spring2019/lab-1-KenjiCrenshaw.git/'
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ touch username.txt
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git add username.txt
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git commit -m "Added username.txt"
+[master c2c6e36] Added username.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 username.txt
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git add username.txt
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   username.txt
+
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git commit -m "Added usernames to username.txt"
+[master 7bd0537] Added usernames to username.txt
+ 1 file changed, 1 insertion(+)
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': KenjiCrenshaw
+Password for 'https://KenjiCrenshaw@github.com': 
+Counting objects: 11, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (11/11), 1.05 KiB | 0 bytes/s, done.
+Total 11 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/CSCI241Spring2019/lab-1-KenjiCrenshaw.git
+   8cbbce3..7bd0537  master -> master
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git checkout
+Your branch is up-to-date with 'origin/master'.
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ touch fake.txt
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git add fake.txt
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git checkout
+A	fake.txt
+Your branch is up-to-date with 'origin/master'.
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ fake.txt
+fake.txt: command not found
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git reset
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git checkout
+Your branch is up-to-date with 'origin/master'.
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git mv
+usage: git mv [<options>] <source>... <destination>
+
+    -v, --verbose         be verbose
+    -n, --dry-run         dry run
+    -f, --force           force move/rename even if target exists
+    -k                    skip move/rename errors
+
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git mv fake.txt
+usage: git mv [<options>] <source>... <destination>
+
+    -v, --verbose         be verbose
+    -n, --dry-run         dry run
+    -f, --force           force move/rename even if target exists
+    -k                    skip move/rename errors
+
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git mv fake.txt Documents
+fatal: not under version control, source=fake.txt, destination=Documents
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git help
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Forward-port local commits to the updated upstream head
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git help mv
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git mv fake.txt fake1.txt
+fatal: not under version control, source=fake.txt, destination=fake1.txt
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git add fake.txt
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git commit m- "Added fake.txt"
+error: pathspec 'm-' did not match any file(s) known to git.
+error: pathspec 'Added fake.txt' did not match any file(s) known to git.
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git commit
+Aborting commit due to empty commit message.
+crenshk@CF165-23:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ '
+
+crenshk@CF167-06:~$ script -a
+Script started, file is typescript
+crenshk@CF167-06:~$ ls
+Desktop    eclipse-workspace	#mredauto#1#  Public	  Videos
+Documents  fake.txt		Music	      Templates
+Downloads  lab-1-KenjiCrenshaw	Pictures      typescript
+crenshk@CF167-06:~$ cd Documents
+crenshk@CF167-06:~/Documents$ ls
+CSCI241  Custom Office Templates  Student Info Sheet - Kenji Crenshaw.doc
+CSCI247  desktop.ini
+CSCI301  $RECYCLE.BIN
+crenshk@CF167-06:~/Documents$ cd CSCI241
+crenshk@CF167-06:~/Documents/CSCI241$ git clone http://github.com/CSCI241Spring2019/lab-1-KenjiCrenshaw.git
+fatal: destination path 'lab-1-KenjiCrenshaw' already exists and is not an empty directory.
+crenshk@CF167-06:~/Documents/CSCI241$ touch fake.txt
+crenshk@CF167-06:~/Documents/CSCI241$ git add fake.txt
+fatal: Not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+crenshk@CF167-06:~/Documents/CSCI241$ git http://github.com/CSCI241Spring2019/lab-1-KenjiCrenshaw.git
+git: 'http://github.com/CSCI241Spring2019/lab-1-KenjiCrenshaw.git' is not a git command. See 'git --help'.
+crenshk@CF167-06:~/Documents/CSCI241$ git checkout http://github.com/CSCI241Spring2019/lab-1-KenjiCrenshaw.git
+fatal: Not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+crenshk@CF167-06:~/Documents/CSCI241$ lab-1-KenjiCrenshaw
+lab-1-KenjiCrenshaw: command not found
+crenshk@CF167-06:~/Documents/CSCI241$ cd lab-1-KenjiCrenshaw
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ touch fake.txt
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git add fake.txt
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   fake.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	typedef
+
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git commit -m "Added fake.txt to test out git commands"
+[master d2daf34] Added fake.txt to test out git commands
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fake.txt
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git mv fake.txt fake2.txt
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': KenjiCrenshaw
+Password for 'https://KenjiCrenshaw@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 292 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/CSCI241Spring2019/lab-1-KenjiCrenshaw.git
+   7bd0537..d2daf34  master -> master
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	renamed:    fake.txt -> fake2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	typedef
+
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git log
+commit d2daf345b8e87990514ed14394dd7eace7229713
+commit d2daf345b8e87990514ed14394dd7eace7229713
+Author: Kenji Crenshaw <crenshk@wwu.edu>
+Date:   Tue Apr 16 12:44:32 2019 -0700
+
+    Added fake.txt to test out git commands
+
+commit 7bd05378459463592cb1f67ee712add8d78c89fa
+Author: Kenji Crenshaw <crenshk@wwu.edu>
+Date:   Thu Apr 11 11:14:58 2019 -0700
+
+    Added usernames to username.txt
+
+commit c2c6e36cccb21d4b39ce8c24586f4d91cd93d443
+Author: Kenji Crenshaw <crenshk@wwu.edu>
+Date:   Thu Apr 11 11:12:00 2019 -0700
+
+    Added username.txt
+
+commit d00b87dc9974a11f4d43c62d7c6b4b88e7815fb1
+Author: Kenji Crenshaw <crenshk@wwu.edu>
+Date:   Thu Apr 11 11:02:36 2019 -0700
+
+    Added part 2 (hobby) to writeup
+
+commit 308cffecb9a334c69c88ae7005b9312627591178
+Author: Kenji Crenshaw <crenshk@wwu.edu>
+Date:   Thu Apr 11 10:59:05 2019 -0700
+
+    Added part 1 (names) to writeup
+
+commit 8cbbce39202c5bdde7def7aae8ec3dae3a76c612
+Author: Kenji Crenshaw <crenshk@wwu.edu>
+Date:   Thu Apr 11 10:48:56 2019 -0700
+
+    Added empty writeup
+
+commit 1523c09e41bb264a6f420fcd78d1a7d6e44a5340
+Author: majeskn <majeskn@wwu.edu>
+Date:   Mon Jan 7 20:49:19 2019 -0800
+
+    Adding setup for gradle
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git checkout fake.txt
+error: pathspec 'fake.txt' did not match any file(s) known to git.
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git blame
+usage: git blame [<options>] [<rev-opts>] [<rev>] [--] <file>
+
+    <rev-opts> are documented in git-rev-list(1)
+
+    --incremental         Show blame entries as we find them, incrementally
+    -b                    Show blank SHA-1 for boundary commits (Default: off)
+    --root                Do not treat root commits as boundaries (Default: off)
+    --show-stats          Show work cost statistics
+    --score-debug         Show output score for blame entries
+    -f, --show-name       Show original filename (Default: auto)
+    -n, --show-number     Show original linenumber (Default: off)
+    -p, --porcelain       Show in a format designed for machine consumption
+    --line-porcelain      Show porcelain format with per-line commit information
+    -c                    Use the same output mode as git-annotate (Default: off)
+    -t                    Show raw timestamp (Default: off)
+    -l                    Show long commit SHA1 (Default: off)
+    -s                    Suppress author name and timestamp (Default: off)
+    -e, --show-email      Show author email instead of name (Default: off)
+    -w                    Ignore whitespace differences
+    --minimal             Spend extra cycles to find better match
+    -S <file>             Use revisions from <file> instead of calling git-rev-list
+    --contents <file>     Use <file>'s contents as the final image
+    -C[<score>]           Find line copies within and across files
+    -M[<score>]           Find line movements within and across files
+    -L <n,m>              Process only line range n,m, counting from 1
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git blame --contents fake.txt
+usage: git blame [<options>] [<rev-opts>] [<rev>] [--] <file>
+
+    <rev-opts> are documented in git-rev-list(1)
+
+    --incremental         Show blame entries as we find them, incrementally
+    -b                    Show blank SHA-1 for boundary commits (Default: off)
+    --root                Do not treat root commits as boundaries (Default: off)
+    --show-stats          Show work cost statistics
+    --score-debug         Show output score for blame entries
+    -f, --show-name       Show original filename (Default: auto)
+    -n, --show-number     Show original linenumber (Default: off)
+    -p, --porcelain       Show in a format designed for machine consumption
+    --line-porcelain      Show porcelain format with per-line commit information
+    -c                    Use the same output mode as git-annotate (Default: off)
+    -t                    Show raw timestamp (Default: off)
+    -l                    Show long commit SHA1 (Default: off)
+    -s                    Suppress author name and timestamp (Default: off)
+    -e, --show-email      Show author email instead of name (Default: off)
+    -w                    Ignore whitespace differences
+    --minimal             Spend extra cycles to find better match
+    -S <file>             Use revisions from <file> instead of calling git-rev-list
+    --contents <file>     Use <file>'s contents as the final image
+    -C[<score>]           Find line copies within and across files
+    -M[<score>]           Find line movements within and across files
+    -L <n,m>              Process only line range n,m, counting from 1
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git blame --root
+usage: git blame [<options>] [<rev-opts>] [<rev>] [--] <file>
+
+    <rev-opts> are documented in git-rev-list(1)
+
+    --incremental         Show blame entries as we find them, incrementally
+    -b                    Show blank SHA-1 for boundary commits (Default: off)
+    --root                Do not treat root commits as boundaries (Default: off)
+    --show-stats          Show work cost statistics
+    --score-debug         Show output score for blame entries
+    -f, --show-name       Show original filename (Default: auto)
+    -n, --show-number     Show original linenumber (Default: off)
+    -p, --porcelain       Show in a format designed for machine consumption
+    --line-porcelain      Show porcelain format with per-line commit information
+    -c                    Use the same output mode as git-annotate (Default: off)
+    -t                    Show raw timestamp (Default: off)
+    -l                    Show long commit SHA1 (Default: off)
+    -s                    Suppress author name and timestamp (Default: off)
+    -e, --show-email      Show author email instead of name (Default: off)
+    -w                    Ignore whitespace differences
+    --minimal             Spend extra cycles to find better match
+    -S <file>             Use revisions from <file> instead of calling git-rev-list
+    --contents <file>     Use <file>'s contents as the final image
+    -C[<score>]           Find line copies within and across files
+    -M[<score>]           Find line movements within and across files
+    -L <n,m>              Process only line range n,m, counting from 1
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git blame --show-stats --full-history fake.txt
+fatal: cannot stat path 'fake.txt': No such file or directory
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git blame --show-stats --full-history username.txt
+7bd05378 (Kenji Crenshaw 2019-04-11 11:14:58 -0700 1) Kenji Crenshaw,crenshk,KenjiCrenshaw
+num read blob: 2
+num get patch: 1
+num commits: 1
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git diff
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git diff fake.txt
+fatal: ambiguous argument 'fake.txt': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git diff fake2.txt
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git checkout fake.txt
+error: pathspec 'fake.txt' did not match any file(s) known to git.
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git checkout fake2.txt
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git reset fake2.txt
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git rm fake2.txt
+fatal: pathspec 'fake2.txt' did not match any files
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git rm fake.txt
+fatal: pathspec 'fake.txt' did not match any files
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git rm fake2
+fatal: pathspec 'fake2' did not match any files
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git rm fake
+fatal: pathspec 'fake' did not match any files
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git rm -f fake.txt
+fatal: pathspec 'fake.txt' did not match any files
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    fake.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	fake2.txt
+	typedef
+
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git add fake2.txt
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git commit -m "Adding fake2.txt and deleting"
+[master d081eda] Adding fake2.txt and deleting
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename fake.txt => fake2.txt (100%)
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': KenjiCrenshaw
+Password for 'https://KenjiCrenshaw@github.com': 
+Counting objects: 2, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 237 bytes | 0 bytes/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/CSCI241Spring2019/lab-1-KenjiCrenshaw.git
+   d2daf34..d081eda  master -> master
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git rm fake2.txt
+rm 'fake2.txt'
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git commit -m "Deleting fake2.txt"
+[master 6520a82] Deleting fake2.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 fake2.txt
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': KenjiCrenshaw
+Password for 'https://KenjiCrenshaw@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/CSCI241Spring2019/lab-1-KenjiCrenshaw.git/'
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	typedef
+
+nothing added to commit but untracked files present (use "git add" to track)
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git add fake2.txt
+fatal: pathspec 'fake2.txt' did not match any files
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git rm fake2.txt
+fatal: pathspec 'fake2.txt' did not match any files
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git rm --cached fake2.txt
+fatal: pathspec 'fake2.txt' did not match any files
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git rm 'fake2.txt'
+fatal: pathspec 'fake2.txt' did not match any files
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	typedef
+
+nothing added to commit but untracked files present (use "git add" to track)
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git checkout writeup.txt
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git reset'
+> 
+> q
+> q
+> end
+> 
+build.gradle  src/          username.txt  
+.git/         typedef       writeup.txt   
+> 
+build.gradle  src/          username.txt  
+.git/         typedef       writeup.txt   
+> git reset'
+
+q
+q
+end
+git: 'reset
+
+q
+q
+end
+git reset' is not a git command. See 'git --help'.
+The program 'q' can be found in the following packages:
+ * python-q-text-as-data
+ * python3-q-text-as-data
+Ask your administrator to install one of them
+The program 'q' can be found in the following packages:
+ * python-q-text-as-data
+ * python3-q-text-as-data
+Ask your administrator to install one of them
+No command 'end' found, did you mean:
+ Command 'ed' from package 'ed' (main)
+ Command 'and' from package 'and' (universe)
+ Command 'bnd' from package 'bnd' (universe)
+ Command 'env' from package 'coreutils' (main)
+ Command 'send' from package 'mailutils-mh' (universe)
+ Command 'send' from package 'nmh' (universe)
+ Command 'nd' from package 'nd' (universe)
+ Command 'snd' from package 'snd-gtk-pulse' (universe)
+ Command 'snd' from package 'snd-nox' (universe)
+ Command 'snd' from package 'snd-gtk-jack' (universe)
+ Command 'ent' from package 'ent' (universe)
+ Command 'esd' from package 'pulseaudio-esound-compat' (universe)
+ Command 'eid' from package 'id-utils' (universe)
+end: command not found
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git reset
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git reset
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	typedef
+
+nothing added to commit but untracked files present (use "git add" to track)
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git reset writeup.txt
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git diff
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git diff --cached
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	typedef
+
+nothing added to commit but untracked files present (use "git add" to track)
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git diff 1 2 writeup.txt
+fatal: ambiguous argument '1': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git diff 1 2 -- writeup.txt
+fatal: bad revision '1'
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git diff 0 2 -- writeupt.txt
+fatal: bad revision '0'
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git diff 8cbbce39202c5bdde7def7aae8ec3dae3a76c612 commit 308cffecb9a334c69c88ae7005b9312627591178
+fatal: ambiguous argument 'commit': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git diff 8cbbce39202c5bdde7def7aae8ec3dae3a76c612 308cffecb9a334c69c88ae7005b9312627591178
+diff --git a/writeup.txt b/writeup.txt
+index e69de29..77e57a2 100644
+--- a/writeup.txt
++++ b/writeup.txt
+@@ -0,0 +1 @@
++1) Kenji Crenshaw
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git diff HEAD writeup.txt
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git diff writeup.txt
+crenshk@CF167-06:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ exit
+exit
+Script done, file is typescript
+crenshk@CF167-06:~$ 
+
+
+
+Script started on Wed 17 Apr 2019 01:58:52 PM PDT
+crenshk@CF167-16:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ T[Kgit chekcout[K[K[K[K[Kckout -b questi 
+on3
+Switched to a new branch 'question3'
+crenshk@CF167-16:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ add [K[K[K[Kgit add weri[K[K[Kreit[K[K[Kiteup.txt
+crenshk@CF167-16:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git commit -,[Km"[K :[K"Added q 
+uestion 3[K[K3 to branch quess[Ktion3"
+[question3 da9802d] Added question3 to branch question3
+ 1 file changed, 1 insertion(+)
+crenshk@CF167-16:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git chekco[K[K[Kckout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+crenshk@CF167-16:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git merge quee[Kstion3
+Updating 6520a82..da9802d
+Fast-forward
+ writeup.txt | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+crenshk@CF167-16:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ gig b[K[K[Kt branch -d question 
+3
+Deleted branch question3 (was da9802d).
+crenshk@CF167-16:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ gradle build
+[0m
+Welcome to Gradle 5.0!
+
+Here are the highlights of this release:
+ - Kotlin DSL 1.0
+ - Task timeouts
+ - Dependency alignment aka BOM support
+ - Interactive `gradle init`
+
+For more details see https://docs.gradle.org/5.0/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+
+[2A[1B[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A> IDLE[0K[6D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[2B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[0K[35D[1B[1m> Loading projects[m[0K[18D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project[m[0K[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project > Compiling /home/crenshk/Documents/CSCI241/lab-1-KenjiCrenshaw/[m[79D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project[m[0K[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [1s][m[37D[1B> IDLE[0K[6D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [1s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [1s][m[37D[2B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [1s][m[0K[33D[2B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [2s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [2s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [2s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [2s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1m===[0;39;1m----------> 28% EXECUTING [2s][m[34D[1B[1m> :startScripts[m[15D[1B[2A[1m<[0;32;1m===[0;39;1m----------> 28% EXECUTING [2s][m[34D[1B[1m> :startScripts[m[15D[1B[2A[0K
+[32;1mBUILD SUCCESSFUL[0;39m in 7s
+5 actionable tasks: 5 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :startScripts[m[15D[1B[2A[2K[1B[2K[1A[0mcrenshk@CF167-16:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ gralde [K[K[K[Kdle run
+[0m
+
+[1A[1m> Connecting to Daemon[m[22D[1B[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :run[m[0K[6D[1B[2A[0K
+[1m> Task :run[m
+Hello World!
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 1 executed, 1 up-to-date
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :run[m[6D[1B[2A[2K[1B[2K[1A[0mcrenshk@CF167-16:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ gradle run --argg[Ks="241 
+`
+[K"
+[0m
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :run[m[0K[6D[1B[2A[0K
+[1m> Task :run[m
+Hello241!
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 2 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :run[m[6D[1B[2A[2K[1B[2K[1A[0mcrenshk@CF167-16:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ gradle run --args="241 
+"
+[0m
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[0K
+[1m> Task :run[m[0K
+Hello 241!
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 2 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B> IDLE[6D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[2B[2A[2K[1B[2K[1A[0mcrenshk@CF167-16:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git add src/main/java. 
+l
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/ 
+lab/[K1/Hello.java
+crenshk@CF167-16:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git commit -m "Hello n 
+ow prints command line arg:[K"
+[master 9b457f6] Hello now prints command line arg
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+crenshk@CF167-16:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': Kenji
+Password for 'https://Kenji@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/CSCI241Spring2019/lab-1-KenjiCrenshaw.git/'
+crenshk@CF167-16:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git add src[K[K[K[K[K[K[K[K[K[K[Kgit status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gradle/[m
+	[31mbuild/[m
+	[31mtypedef[m
+	[31mtypescript[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+crenshk@CF167-16:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': KenjiCrenshaw
+Password for 'https://KenjiCrenshaw@github.com': 
+Counting objects: 12, done.
+Delta compression using up to 8 threads.
+Compressing objects:  12% (1/8)   
+Compressing objects:  25% (2/8)   
+Compressing objects:  37% (3/8)   
+Compressing objects:  50% (4/8)   
+Compressing objects:  62% (5/8)   
+Compressing objects:  75% (6/8)   
+Compressing objects:  87% (7/8)   
+Compressing objects: 100% (8/8)   
+Compressing objects: 100% (8/8), done.
+Writing objects:   8% (1/12)   
+Writing objects:  16% (2/12)   
+Writing objects:  25% (3/12)   
+Writing objects:  33% (4/12)   
+Writing objects:  41% (5/12)   
+Writing objects:  50% (6/12)   
+Writing objects:  58% (7/12)   
+Writing objects:  66% (8/12)   
+Writing objects:  75% (9/12)   
+Writing objects:  83% (10/12)   
+Writing objects:  91% (11/12)   
+Writing objects: 100% (12/12)   
+Writing objects: 100% (12/12), 1.05 KiB | 0 bytes/s, done.
+Total 12 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)   [K
+remote: Resolving deltas:  33% (1/3)   [K
+remote: Resolving deltas:  66% (2/3)   [K
+remote: Resolving deltas: 100% (3/3)   [K
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.[K
+To https://github.com/CSCI241Spring2019/lab-1-KenjiCrenshaw.git
+   d081eda..9b457f6  master -> master
+crenshk@CF167-16:~/Documents/CSCI241/lab-1-KenjiCrenshaw$ exit
+exit
+
+Script done on Wed 17 Apr 2019 02:24:02 PM PDT
